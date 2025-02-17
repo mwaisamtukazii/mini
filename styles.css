@@ -1,0 +1,109 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px;
+    background-color: #f7f7f7;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: #2f2f2f;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    transition: all 0.3s ease;
+}
+
+.input-field {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.input-field:focus {
+    border-color: #6c5ce7;
+    outline: none;
+}
+
+.btn {
+    background-color: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+.btn:hover {
+    background-color: #5e4bc4;
+}
+
+.qr-box {
+    margin-top: 20px;
+    display: inline-block;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: opacity 0.3s ease;
+}
+
+.qr-box canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 30px;
+    background-color: #2d3436;
+    color: #fff;
+    padding: 15px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    font-size: 1rem;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    font-weight: 400;
+}
+
+footer.show-footer {
+    opacity: 1;
+}
+
+/* Animation for Showing Footer */
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
